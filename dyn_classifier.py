@@ -3,12 +3,10 @@ from matplotlib import pyplot as plt
 from astropy.table import Table
 
 def dyn_classifier(Vc, verbose = True):
-	
-	dpath = '/Users/Dario/Dropbox/Codes/python/dyn_classifier/'
 
 	# Load dynamical classifier from 238 CALIFA galaxies
 	# from Kalinova et al. 2017b
-	dynclass = np.load(dpath+'dyn_classes.npz')
+	dynclass = np.load('./data_input/dyn_classes.npz')
 	# ... dynamical radius
 	rads = dynclass['rads']
 	# ... eigenvectors
